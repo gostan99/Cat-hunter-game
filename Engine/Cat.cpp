@@ -780,10 +780,13 @@ void Cat::ControlCat(const Mouse& mouse, float dt)
 		// vector nay co vai tro chi huong cho con meo di chuyen
 		Vector2 v_cat;
 		v_cat = v_mouse - loc;
+		if (v_cat.getLengthSq()>2.0f)
+		{
 		// chuan hoa do dai v_cat = 1
 		v_cat.Nomalize();
 		// cap nhat vi tri cua Cat
 		loc += (v_cat * speed * dt);
+		}
 	}	
 }
 
