@@ -82,7 +82,7 @@ void Game::UpdateModel()
 		}
 	}
 }
-
+//test thu Git
 void Game::ComposeFrame()
 {
 	if (!GameStart)
